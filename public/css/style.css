@@ -21,7 +21,7 @@ a {
 }
 
 small {
-  color: #828282;
+  color: #837194;
 }
 
 header {
@@ -63,7 +63,7 @@ textarea {
 }
 
 .news-list {
-  background-color: #f6f6ef;
+  background-color: #e4ddda;
   width: 85%;
   margin: 12px auto;
   padding-bottom: 25px;
@@ -75,7 +75,7 @@ textarea {
 }
 
 .news-position {
-  color: #828282;
+  color: #969292;
 }
 
 .news-info {
