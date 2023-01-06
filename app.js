@@ -62,7 +62,7 @@ app.get("/posts/:id", (req, res) => {
     </body>
     </html>`
   res.send(htmlError)
-    // throw new Error('404 - Post not found')
+    
   } else {
 
   const html = `<!DOCTYPE html>
