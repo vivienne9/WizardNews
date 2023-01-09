@@ -1,7 +1,7 @@
 {
   "name": "wizardnews",
   "version": "1.0.0",
-  "description": "",
+  "description": "\"Pair project\"",
   "scripts": {
     "start:dev": "nodemon app.js"
   },
@@ -12,7 +12,16 @@
     "nodemon": "^2.0.20"
   },
   "dependencies": {
-    "express": "^4.16.2",
+    "express": "^4.18.2",
     "morgan": "^1.10.0"
-  }
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivienne9/WizardNews.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vivienne9/WizardNews/issues"
+  },
+  "homepage": "https://github.com/vivienne9/WizardNews#readme"
 }
