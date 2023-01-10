@@ -50,51 +50,51 @@ app.get("/posts/:id", (req, res) => {
     // if the post was not found thow a 404 error //
     res.status(404);
 
-//     const htmlError = `<!DOCTYPE html>
-//     <html>
-//     <head>
-//       <title>Wizard News</title>
-//       <link rel="stylesheet" type="text/css" href="/css/style.css" />
-//     </head>
-//     <body>
-//       <header><img src="./css/logo.png"/>Wizard News</header>
-//       <div class="not-found">
-//         <p>Accio Page! 🧙‍♀️ ... Evanesco! Page Not Found</p>
-//         <img src="/dumbledore-404.gif" />
-//       </div>
-//     </body>
-//     </html>`;
-//     res.send(htmlError);
+    const htmlError = `<!DOCTYPE html>
+    <html>
+    <head>
+      <title>Wizard News</title>
+      <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    </head>
+    <body>
+      <header><img src="./css/logo.png"/>Wizard News</header>
+      <div class="not-found">
+        <p>Accio Page! 🧙‍♀️ ... Evanesco! Page Not Found</p>
+        <img src="/dumbledore-404.gif" />
+      </div>
+    </body>
+    </html>`;
+    res.send(htmlError);
     
-//   } else {
-//     const html = `<!DOCTYPE html>
-//     <html>
-//       <head>
-//         <title> Wizard News </title>
-//         <link rel="stylesheet" href="/css/style.css" />
-//       </head>
-//       <body>
-//       <div class="news-list">
-//       <header><img src="/logo.png"/>Wizard News</header>
-//       ${posts
-//         .map(
-//           (post) => `
-//       <div class='news-item'>
-//         <p>
-//           <span class="news-position">${post.id}. ▲</span>
-//           ${post.title}
-//           <small>(by ${post.name})</small>
-//         </p>
-//         <small class="news-info">
-//           ${post.upvotes} upvotes | ${post.date}
-//         </small>
-//       </div>`
-//         )
-//         .join("")}
-//   </div>
-// </body>
-// </html>`;
-//     res.send(html);
+  } else {
+    const html = `<!DOCTYPE html>
+    <html>
+      <head>
+        <title> Wizard News </title>
+        <link rel="stylesheet" href="/css/style.css" />
+      </head>
+      <body>
+      <div class="news-list">
+      <header><img src="/logo.png"/>Wizard News</header>
+      ${posts
+        .map(
+          (post) => `
+      <div class='news-item'>
+        <p>
+          <span class="news-position">${post.id}. ▲</span>
+          ${post.title}
+          <small>(by ${post.name})</small>
+        </p>
+        <small class="news-info">
+          ${post.upvotes} upvotes | ${post.date}
+        </small>
+      </div>`
+        )
+        .join("")}
+  </div>
+</body>
+</html>`;
+    res.send(html);
   }
 });
 
